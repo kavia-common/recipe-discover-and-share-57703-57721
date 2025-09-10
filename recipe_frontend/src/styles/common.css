@@ -1,0 +1,166 @@
+:root {
+  /* Color tokens from design system */
+  --color-ffffff: #ffffff;
+  --color-000000: #000000;
+  --color-292929: #292929;
+  --color-979797: #979797;
+  --color-fff2af: #fff2af;
+  --color-129575: #129575;
+  --color-dadada: #dadada;
+  --color-4cd964: #4cd964;
+  --color-121212: #121212;
+  --color-ff9c00: #ff9c00;
+  --color-ffc107: #ffc107;
+  --color-ff3d00: #ff3d00;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-035b81: #035b81;
+  --color-d9d9d9: #d9d9d9;
+  --color-484848: #484848;
+  --color-303030: #303030;
+  --color-a9a9a9: #a9a9a9;
+  --color-ffa61a: #ffa61a;
+  --color-ffce80: #ffce80;
+  --color-71b1a1: #71b1a1;
+  --color-130f26: #130f26;
+  --color-c1c1c1: #c1c1c1;
+  --color-ffe1b3: #ffe1b3;
+  --color-ffad30: #ffad30;
+  --color-dbebe7: #dbebe7;
+  --color-898989: #898989;
+  --color-292d32: #292d32;
+  --color-181818: #181818;
+  --color-c4c4c4: #c4c4c4;
+  --color-797979: #797979;
+  --color-808a96: #808a96;
+  --color-ceecd7: #ceecd7;
+  --color-31b057: #31b057;
+  --color-ffe1e7: #ffe1e7;
+  --color-fd3654: #fd3654;
+  --color-ffba4d: #ffba4d;
+  --color-d8d8d8: #d8d8d8;
+  --color-f6faf9: #f6faf9;
+  --color-afd3ca: #afd3ca;
+  --color-f4f4f4: #f4f4f4;
+  --color-9747ff: #9747ff;
+  --color-828282: #828282;
+
+  /* Typography (subset used on this screen) */
+  --font-family-poppins: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+
+  --typo-68-size: 20px;
+  --typo-68-weight: 600;
+  --typo-68-line: 30px;
+
+  --typo-70-size: 11px;
+  --typo-70-weight: 400;
+  --typo-70-line: 16.5px;
+
+  --typo-71-size: 11px;
+  --typo-71-weight: 600;
+  --typo-71-line: 16.5px;
+
+  --typo-72-size: 14px;
+  --typo-72-weight: 600;
+  --typo-72-line: 21px;
+
+  --typo-73-size: 11px;
+  --typo-73-weight: 400;
+  --typo-73-line: 16.5px;
+
+  --typo-74-size: 16px;
+  --typo-74-weight: 600;
+  --typo-74-line: 24px;
+
+  --typo-75-size: 14px;
+  --typo-75-weight: 600;
+  --typo-75-line: 21px;
+
+  --typo-76-size: 11px;
+  --typo-76-weight: 600;
+  --typo-76-line: 16.5px;
+
+  --typo-77-size: 11px;
+  --typo-77-weight: 600;
+  --typo-77-line: 16.5px;
+
+  --typo-65-size: 11px;
+  --typo-65-weight: 400;
+  --typo-65-line: 16.5px;
+
+  --typo-67-size: 15px;
+  --typo-67-weight: 500;
+  --typo-67-line: 17.9px;
+
+  /* Radii */
+  --radius-10: 10px;
+  --radius-12: 12px;
+  --radius-20: 20px;
+  --radius-30: 30px;
+  --radius-40: 40px;
+  --radius-50: 50px;
+
+  /* Shadows */
+  --shadow-128: 0 0 8px rgba(108,108,108,0.5);
+  --shadow-129: 0 0 20px rgba(0,0,0,0.18);
+  --shadow-127: 0 8px 25px rgba(32,32,32,0.25);
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--color-ffffff);
+  color: var(--color-121212);
+  font-family: var(--font-family-poppins);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+/* Utilities */
+.row-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 16px;
+}
+
+.chips-row {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 0 16px;
+}
+
+.card {
+  width: 150px;
+  flex: 0 0 auto;
+}
+
+.rating-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 23px;
+  padding: 0 8px;
+  background: var(--color-ffe1b3);
+  border-radius: 20px;
+  font-size: var(--typo-73-size);
+  line-height: var(--typo-73-line);
+  color: var(--color-000000);
+}
+
+.star {
+  width: 10px;
+  height: 10px;
+  background: var(--color-ffad30);
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
